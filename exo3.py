@@ -10,7 +10,7 @@ vector = []
 for numvector in range(2):
     vector.append([])
     for values in range(vectorSize):
-        vector[numvector].append(int(input(f"Entrez v{numvector + 1}[{values}]: ")))
+        vector[numvector].append(float(input(f"Entrez v{numvector + 1}[{values}]: ")))
     print("")
 
 print(vector)
