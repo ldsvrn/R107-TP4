@@ -1,21 +1,21 @@
 while True:
     try:
-        vectorSize = int(input("Entrez la taille de vos vecteurs [Entre 1 et 10]: "))
-        if 1 <= vectorSize <= 10: break
+        vecteurSize = int(input("Entrez la taille de vos vecteurs [Entre 1 et 10]: "))
+        if 1 <= vecteurSize <= 10: break
     except ValueError:
         continue
 
-vector = []
+vecteur = []
 
-for numvector in range(2):
-    vector.append([])
-    for values in range(vectorSize):
-        vector[numvector].append(float(input(f"Entrez v{numvector + 1}[{values}]: ")))
+for numvecteur in range(2):
+    vecteur.append([])
+    for values in range(vecteurSize):
+        vecteur[numvecteur].append(float(input(f"Entrez v{numvecteur + 1}[{values}]: ")))
     print("")
 
-print(vector)
+print(vecteur)
 scalaire = 0
-for i in range(vectorSize):
-    scalaire += vector[0][i] * vector[1][i]
+for v1, v2 in zip(vecteur[0], vecteur[1]):  # ???
+    scalaire += v1 * v2
 
 print(f"\t- Le produit scalaire est égal à {scalaire}")
