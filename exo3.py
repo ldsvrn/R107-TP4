@@ -13,6 +13,7 @@ for numvector in range(2):
         vector[numvector].append(int(input(f"Entrez v{numvector + 1}[{values}]: ")))
     print("")
 
+print(vector)
 scalaire = 0
 for i in range(vectorSize):
     scalaire += vector[0][i] * vector[1][i]

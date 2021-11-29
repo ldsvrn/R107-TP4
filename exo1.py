@@ -6,7 +6,7 @@ while True:
         continue
 
 result = []
-for i in range(1, 11):
+for i in range(10):
     result.append(nb*i)
 
 for i in result:

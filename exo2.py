@@ -10,8 +10,6 @@ for i in range(nombreEtudiants):
                 notes.append(note)
                 moyenne += note
                 break
-            else:
-                continue
         except ValueError:
             continue
 
