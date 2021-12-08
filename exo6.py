@@ -1,4 +1,5 @@
 tab = [5, 2, 4, 8, 1, 3]
+tabBackup = tab
 print(tab)
 
 # absolument pas opti mais 'fonctionne'
@@ -16,3 +17,7 @@ for i in range(len(tab)):
         tab[index] = tab[i]
         tab[i] = temp
     print(f"Phase {i}: {tab}")
+
+print(f"sorted(tab) = {sorted(tabBackup)}")
+tabBackup.sort()
+print(f"tab.sort() -> tab = {tabBackup}")
