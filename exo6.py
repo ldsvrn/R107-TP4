@@ -6,12 +6,12 @@ print(tab)
 for i in range(len(tab)):
     temp = tab[i]
 
-    index=0
+    index = 0
     for j in range(i, len(tab)):
         if tab[j] < temp:
             temp = tab[j]
             index = j
-            #print(f"DEBUG: j = {j}, tab[j] = {tab[j]}, temp = {temp}, index = {index}, i = {i}")
+            # print(f"DEBUG: j = {j}, tab[j] = {tab[j]}, temp = {temp}, index = {index}, i = {i}")
 
     if index != 0:
         tab[index] = tab[i]

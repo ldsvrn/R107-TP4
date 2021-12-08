@@ -9,7 +9,7 @@ year = int(date[4] + date[5] + date[6] + date[7])
 
 print(f"La date entrée est: {day}/{month}/{year}")
 
-bissextile = year%4 == 0 and year%100 != 0 or year%400 == 0
+bissextile = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 print(f"L'année {year} est bissextile!" if bissextile else f"L'année {year} est commune!")
 
 if bissextile:
